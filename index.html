@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Library Webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+      .carousel,
+      .carousel-inner,
+      .carousel-item {
+        height: 100vh;
+      }
+
+      /* Ensure images fill the container and maintain aspect ratio */
+      .carousel-item img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+
+      /* Center carousel controls */
+      .carousel-control-prev,
+      .carousel-control-next {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .card-img-top {
+        padding: 20px;
+        height: 200px; /* Set a fixed height */
+        object-fit: contain; /* Maintain aspect ratio without cropping */
+      }
+      .py-5 {
+        padding-top: 9rem !important;
+        padding-bottom: 7rem !important;
+      }
+      .bg-image {
+        height: 97vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1615493749624-7a97d4b18fe6?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+      }
+      .text-shadow {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Horizontal, Vertical, Blur Radius, Color */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-success sticky-top">
+      <div class="container-fluid mx-5">
+        <a class="navbar-brand text-light" href="#">Knowledge Hub</a>
+        <button class="navbar-toggler btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#Collections">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#Timings">Timings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#Contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#Location">Location</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://cdn.pixabay.com/photo/2018/11/07/20/48/book-3801210_1280.jpg" class="d-block w-100" alt="Library Image 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2016/11/18/16/56/book-1835799_640.jpg" class="d-block w-100" alt="Library Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2022/08/24/15/42/library-7408106_960_720.jpg" class="d-block w-100" alt="Library Image 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Collections Section -->
+<div class="container py-4" id="Collections">
+    <h2 class="pb-2 border-bottom">Library Collections</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4 py-3">
+      
+      <!-- Collection Item 1 -->
+      <div class="col" data-aos="fade-up">
+        <div class="card h-100 text-center bg-black">
+          <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546910265i/2._UX187_.jpg" class="card-img-top" alt="Collection 1">
+          <div class="card-body">
+            <h5 class="card-title text-light">Fiction</h5>
+            <p class="card-text text-light">Explore our wide range of fictional novels.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Collection Item 2 -->
+      <div class="col" data-aos="fade-up">
+        <div class="card h-100 text-center bg-black">
+          <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1560816565i/48855._UX160_.jpg" class="card-img-top" alt="Collection 2">
+          <div class="card-body">
+            <h5 class="card-title text-light">Non-Fiction</h5>
+            <p class="card-text text-light">Discover biographies, history, and more.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Collection Item 3 -->
+      <div class="col" data-aos="fade-up">
+        <div class="card h-100 text-center bg-black">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8PnKNbcHNbxEl0fXUZl04S_BDLl7u8ym2Lw&s" class="card-img-top" alt="Collection 3">
+          <div class="card-body">
+            <h5 class="card-title text-light">Children's Books</h5>
+            <p class="card-text text-light">A collection of delightful stories for kids.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Collection Item 4 -->
+      <div class="col" data-aos="fade-up">
+        <div class="card h-100 text-center bg-black">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLiM5QmK4Z0diBI-UbqZEYD8h5dV7gIQhhvg&s" class="card-img-top" alt="Collection 4">
+          <div class="card-body">
+            <h5 class="card-title text-light">Research Papers</h5>
+            <p class="card-text text-light">Access a wide variety of academic research.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Collection Item 5 -->
+      <div class="col" data-aos="fade-up">
+        <div class="card h-100 text-center bg-black">
+          <img src="https://lh4.googleusercontent.com/proxy/dsrAW2BmNANKmwNK55hHOnen8mJ3G0sjkEN1nXU7ZIclhy6V4lt7rYUXBVMOXbxWYdVMF9e-E9miLj1-Qolx5v_4th216gmT3Z61tx424AgTiZHFs-yqGpFiuw" class="card-img-top" alt="Collection 5">
+          <div class="card-body">
+            <h5 class="card-title text-light">Magazines</h5>
+            <p class="card-text text-light">Stay updated with the latest issues.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Collection Item 6 -->
+      <div class="col" data-aos="fade-up">
+        <div class="card h-100 text-center bg-black">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShahgfRy1uCi8QL87EQhUVHSdLO9BifWm8xQ&s" class="card-img-top" alt="Collection 6">
+          <div class="card-body">
+            <h5 class="card-title text-light">Digital Resources</h5>
+            <p class="card-text text-light">Access e-books and online journals.</p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+      </div>
+    </div>
+
+    <!-- Timings -->
+    <div class="container py-4" id="Timings" data-aos="fade-down">
+      <h2 class="pb-2 border-bottom">Library Hours</h2>
+      <h5 >Monday - Friday: 9:00 AM - 8:00 PM</h5>
+      <h5>Saturday - Sunday: 10:00 AM - 5:00 PM</h5>
+    </div>
+
+    <!-- Contact Us -->
+    <div class="container py-4" id="Contact" data-aos="fade-down">
+      <h2 class="pb-2 border-bottom">Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullName" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label ">Message</label>
+          <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+
+    <!-- Google Maps Section -->
+    <div class="container py-4" id="Location" data-aos="fade-up-right">
+      <h2 class="pb-2 border-bottom ">Location</h2>
+      <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509669!2d144.95373631531886!3d-37.81720997975186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f0b4bdb%3A0x5045675218ce6c2!2sLibrary!5e0!3m2!1sen!2sau!4v1623995975570!5m2!1sen!2sau" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-center text-white py-4">
+      <p>© 2024 City Library. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
